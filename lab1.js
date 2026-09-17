@@ -8,3 +8,10 @@ console.log("Họ tên:", name);
 console.log("Tuổi:", age);
 console.log("Địa chỉ:", address);
 console.log("Sinh viên:", isStudent);
+
+// Ham
+function sayHello(){
+    console.log("Xin chào");
+    return 10;
+}
+sayHello();
