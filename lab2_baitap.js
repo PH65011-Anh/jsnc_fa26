@@ -15,3 +15,28 @@ console.log("Bai2: ");
 for(i = 0; i < names.length; i++){
     console.log(names[i]);
 }
+
+console.log("Bai3: ");
+const student = { id: 1, name: "Nguyễn Văn An", age: 20, email: "an@gmail.com", major: "CNTT", };
+console.log(student);
+console.log(student.name);
+console.log(student.age);
+console.log(student.email);
+student.age = 22;
+console.log(student.age);
+student.phone = "123456";
+console.log(student);
+
+console.log("Bai4: ");
+const students = [
+    { id: 1,  name: "Nguyễn Văn An",age: 20, },
+    { id: 2, name: "Trần Văn Bình", age: 21, }, 
+    { id: 3, name: "Lê Văn Nam", age: 20, },
+ ];
+console.log(students);
+console.log(students[0].name);
+console.log(students[1].age);
+
+for (let i = 0; i < students.length; i++) {
+  console.log(students[i].name);
+}
