@@ -40,3 +40,19 @@ console.log(students[1].age);
 for (let i = 0; i < students.length; i++) {
   console.log(students[i].name);
 }
+
+console.log("Bai5: ");
+let html = document.getElementById("students");
+let content = "";
+for (let i = 0; i < students.length; i++) {
+  content += `
+    <div>
+      <h3>Ten sinh vien: ${students[i].name}</h3>
+      <h4>ID sinh vien: ${students[i].id}</h4>
+    </div>
+  `;
+}
+
+html.innerHTML = content;
+
+console.log(html);
