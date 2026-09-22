@@ -41,6 +41,11 @@ for (let i = 0; i < students.length; i++) {
   console.log(students[i].name);
 }
 
+const result = students.map(function (student) {
+  return student.name;
+});
+console.log(result);
+
 console.log("Bai5: ");
 let html = document.getElementById("students");
 let content = "";
@@ -48,7 +53,7 @@ for (let i = 0; i < students.length; i++) {
   content += `
     <div>
       <h3>Ten sinh vien: ${students[i].name}</h3>
-      <h4>ID sinh vien: ${students[i].id}</h4>
+      <h4>ID sinh vien: ${students[i].age}</h4>
     </div>
   `;
 }
