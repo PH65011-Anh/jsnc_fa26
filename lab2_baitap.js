@@ -41,10 +41,10 @@ for (let i = 0; i < students.length; i++) {
   console.log(students[i].name);
 }
 
-const result = students.map(function (student) {
-  return student.name;
-});
-console.log(result);
+// const result = students.map(function (student) {
+//   return student.name;
+// });
+// console.log(result);
 
 console.log("Bai5: ");
 let html = document.getElementById("students");
