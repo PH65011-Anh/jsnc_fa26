@@ -56,24 +56,42 @@ console.log(add2(6, 4));
 
 
 // map
+
+// const mapInfo = students.map((item) => {
+//   console.log(item);
+//   return `ID: ${item.id} - Ten: ${item.name}`;
+// });
+
 const students = [
-  { id: 1, name: "An" }, // item
-  { id: 2, name: "Bình" }, // item
-  { id: 3, name: "Cường" }, // item
+  { id: 1, name: "An", age: 22 },
+  { id: 2, name: "Bình", age: 33 },
+  { id: 3, name: "Cường", age: 34 },
 ];
 
-const mapInfo = students.map((item) => {
-  console.log(item);
-  return `ID: ${item.id} - Ten: ${item.name}`;
-});
+document.getElementById("students").innerHTML = students
+  .map(
+    (student) => `
+     <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border border-gray-300">${student.id}</td>
+              <td class="px-4 py-2 border border-gray-300">${student.name}</td>
+              <td class="px-4 py-2 border border-gray-300">${student.age}</td>
+              <td class="px-4 py-2 border border-gray-300">
+                <div class="flex items-center justify-center gap-2">
+                  <a
+                    href="#"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
+                  >
+                    Edit
+                  </a>
 
-const html2 = students.map((student) => {
-  return `
-    <tr>
-      <td>${student.id}</td>
-      <td>${student.name}</td>
-    </tr>
-  `;
-});
-console.log(html2);
-document.getElementById("app").innerHTML = html;
+                  <button
+                    class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </td>
+            </tr>
+            `,
+  )
+  .join("");

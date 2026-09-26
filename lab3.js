@@ -69,6 +69,39 @@ const bcd = students.map((student) => {
 console.log(bcd);
 
 
+console.log("Bai 8:");
+const products = [ { id: 1, name: "iPhone 15", price: 20000000, }, { id: 2, name: "MacBook Air", price: 25000000, }, { id: 3, name: "AirPods", price: 5000000, }, ];
+products.map(function(product) {
+  console.log(product.id + " | " + product.name + " | " + product.price);
+});
 
 
 
+
+console.log("Bai tonghop:");
+const product2 = [ { id: 1, name: "Áo thun", price: 150000, category: "Thời trang", }, { id: 2, name: "Quần jean", price: 350000, category: "Thời trang", }, { id: 3, name: "Giày sneaker", price: 800000, category: "Giày", }, ];
+document.getElementById("products").innerHTML = product2.map((product) => 
+    `<tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border border-gray-300">${product.id}</td>
+              <td class="px-4 py-2 border border-gray-300">${product.name}</td>
+              <td class="px-4 py-2 border border-gray-300">${product.price}</td>
+              <td class="px-4 py-2 border border-gray-300">
+                <div class="flex items-center justify-center gap-2">
+                  <a
+                    href="#"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
+                  >
+                    Edit
+                  </a>
+
+                  <button
+                    class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </td>
+            </tr>
+            `,
+  )
+  .join("");
