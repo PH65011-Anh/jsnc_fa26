@@ -11,19 +11,19 @@
       <div
         class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between"
       >
-        <strong>WEB2064 JSNCjj</strong>
+        <strong>WEB2064 JSNC</strong>
 
         <div class="hidden md:flex items-center space-x-8">
           <a href="index.html" class="hover:text-gray-200">Danh sách</a>
-          
           <a href="add.html" class="hover:text-gray-200">Thêm mới</a>
         </div>
         <div class="hidden md:flex items-center space-x-6"></div>
       </div>
     </nav>
     <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
-      <h1 id="title" class="text-2xl font-semibold mb-6">Danh sách</h1>
-        <div id="products"></div>
+      <!-- <h1 id="title" class="text-2xl font-semibold mb-6">Danh sách</h1>
+      <div id="products"></div>
+      <div id="app"></div>
       <div class="overflow-x-auto">
         <table class="w-full border border-gray-300 rounded-lg">
           <thead class="bg-gray-100">
@@ -33,38 +33,41 @@
               <th class="px-4 py-2 border border-gray-300">Age</th>
               <th class="px-4 py-2 border border-gray-300">Actions</th>
             </tr>
-          </thead>
-
-          <tbody id="students">
-            <tr class="hover:bg-gray-50">
-              <td class="px-4 py-2 border border-gray-300">1</td>
-              <td class="px-4 py-2 border border-gray-300">Name</td>
-              <td class="px-4 py-2 border border-gray-300">33</td>
-              <td class="px-4 py-2 border border-gray-300">
-                <div class="flex items-center justify-center gap-2">
-                  <a
-                    href="#"
-                    class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
-                  >
-                    Edit
-                  </a>
-
-                  <button
-                    class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
-                  >
-                    Delete
-                  </button>
-                </div>
-              </td>
+          </thead> -->
+          <tbody id="list"></tbody>
+          <h1 id="title" class="text-2xl font-semibold mb-6">Danh sách sản phẩm</h1>
+      <div id="products"></div>
+      <div id="app"></div>
+      <div>
+        <input
+          type="text"
+          id="search"
+          placeholder="Nhập tên sản phẩm..."
+        />
+        <button onclick="searchProduct()">Tìm kiếm</button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full border border-gray-300 rounded-lg">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 border border-gray-300">STT</th>
+              <th class="px-4 py-2 border border-gray-300">ID</th>
+              <th class="px-4 py-2 border border-gray-300">Tên sản phẩm</th>
+              <th class="px-4 py-2 border border-gray-300">Giá</th>
+              <th class="px-4 py-2 border border-gray-300">Danh mục</th>
+              <th class="px-4 py-2 border border-gray-300">Thao tác</th>
             </tr>
-          </tbody>
+          </thead>
+          <tbody id="list2"></tbody>
         </table>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
     <!-- <script src="lab1.js"></script> -->
     <!-- <script src="lab2.js"></script> -->
-    <script src="lab3.js"></script>
     <!-- <script src="lab2_baitap.js"></script> -->
+     <!-- <script src="lab3.js"></script> -->
+     <!-- <script src="lab4.js"></script> -->
+     <script src="lab4-baitap"></script>
   </body>
 </html>

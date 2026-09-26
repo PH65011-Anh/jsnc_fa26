@@ -71,11 +71,9 @@ console.log(bcd);
 
 console.log("Bai 8:");
 const products = [ { id: 1, name: "iPhone 15", price: 20000000, }, { id: 2, name: "MacBook Air", price: 25000000, }, { id: 3, name: "AirPods", price: 5000000, }, ];
-products.map(function(product) {
+const egh = products.map((product) => {
   console.log(product.id + " | " + product.name + " | " + product.price);
 });
-
-
 
 
 console.log("Bai tonghop:");
