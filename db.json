@@ -43,6 +43,12 @@
       "price": "123131312",
       "category": "Điện thoại",
       "id": 3
+    },
+    {
+      "name": "as",
+      "price": "456",
+      "category": "Laptop",
+      "id": 4
     }
   ]
 }
