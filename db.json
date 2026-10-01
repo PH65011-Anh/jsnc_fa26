@@ -17,6 +17,18 @@
       "age": 35,
       "email": "hoadv@gmail.com",
       "id": 3
+    },
+    {
+      "name": "abc",
+      "price": "123",
+      "category": "Backend",
+      "id": 4
+    },
+    {
+      "name": "12345",
+      "price": "31000",
+      "category": "Mobile",
+      "id": 5
     }
   ],
   "products": [
@@ -27,19 +39,10 @@
       "category": "Điện thoại"
     },
     {
-      "id": 2,
-      "name": "Samsung S25",
-      "price": 22000000,
-      "category": "Điện thoại"
-    },
-    {
-      "id": 3,
-      "name": "Xiaomi 15",
-      "price": 18000000,
-      "category": "Điện thoại"
+      "name": "q1232131",
+      "price": "123131312",
+      "category": "Điện thoại",
+      "id": 3
     }
   ]
 }
-
-
-

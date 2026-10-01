@@ -18,7 +18,7 @@ axios.get("http://localhost:3000/products").then((res) => {
                     Sửa
                   </a>
 
-                  <button
+                  <button onclick="deleteStudent(${item.id})"
                     class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
                   >
                     Xóa
@@ -30,3 +30,20 @@ axios.get("http://localhost:3000/products").then((res) => {
     )
     .join("");
 });
+
+function deleteStudent(id){
+  const result = confirm ("Xoa hay khong");
+  console.log(result);
+  if(result){
+    axios.delete(`http://localhost:3000/products/${id}`).then(() => {
+      alert("Xoa thanh cong");
+    })
+    .catch(()=>{
+      alert("Xoa that bai");
+    })
+  }
+}
+
+
+
+
