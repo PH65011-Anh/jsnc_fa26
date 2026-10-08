@@ -33,22 +33,28 @@
   ],
   "products": [
     {
-      "id": 1,
-      "name": "iPhone 15",
-      "price": 25000000,
-      "category": "Điện thoại"
-    },
-    {
-      "name": "q1232131",
-      "price": "123131312",
-      "category": "Điện thoại",
-      "id": 3
-    },
-    {
-      "name": "as",
+      "name": "asd",
       "price": "456",
       "category": "Laptop",
       "id": 4
+    },
+    {
+      "name": "123",
+      "price": "12345",
+      "category": "Máy tính bảng",
+      "id": 5
+    },
+    {
+      "name": "IPHONE 19",
+      "price": "18000001",
+      "category": "Điện thoại",
+      "id": 6
+    },
+    {
+      "name": "abcde",
+      "price": "789890",
+      "category": "Máy tính bảng",
+      "id": 7
     }
   ]
 }
